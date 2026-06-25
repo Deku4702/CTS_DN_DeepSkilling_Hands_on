@@ -1,6 +1,6 @@
 # Java Full Stack (JFS) Training Repository
 
-Welcome to the **JFS** training repository. This repository contains the coursework, exercises, and projects completed during the training program. The codebase is organized by weeks, focusing on different technologies, paradigms, and best practices.
+Welcome to the **JFS** training repository. This repository contains the coursework, exercises, and projects completed during the training program. The codebase is organized by weeks and structured strictly according to the topic and exercise guidelines.
 
 ## Directory Structure Overview
 
@@ -9,76 +9,88 @@ The repository is structured as follows:
 ```
 JFS/
 ├── Week 1/
-│   ├── Data Structures and Algorithms/
-│   │   └── E-Commerce Platform Search Function/
-│   ├── Desgin Patterns and Principle/
-│   │   ├── FactoryMethodImplementation/
-│   │   ├── Financial_ForeCasting/
-│   │   ├── SettingUpJunit/
-│   │   └── SingletoPatternExample/
-│   ├── PL_SQL/
-│   │   ├── Control Structure
-│   │   └── Stored Procedures
-│   └── TDD using Junit and Mockito/
-│       ├── AAA_Pattern/
-│       ├── Assertions_in_JUnit/
-│       ├── LibraryManagement/
-│       ├── Logging_Error_Messages/
-│       ├── Mocking_and_Stubbing/
-│       └── Verifiying_Interactions/
+│   ├── Design Patterns and Principles/
+│   │   ├── Exercise 1 - Implementing the Singleton Pattern/
+│   │   └── Exercise 2 - Implementing the Factory Method Pattern/
+│   ├── Algorithms_Data Structures/
+│   │   ├── Exercise 2 - E-commerce Platform Search Function/
+│   │   └── Exercise 7 - Financial Forecasting/
+│   ├── PLSQL_Exercises/
+│   │   ├── Exercise 1 - Control Structures/
+│   │   └── Exercise 3 - Stored Procedures/
+│   ├── 1. JUnit_Basic Testing Exercises/
+│   │   ├── Exercise 1 - Setting Up JUnit/
+│   │   ├── Exercise 3 - Assertions in JUnit/
+│   │   └── Exercise 4 - Arrange-Act-Assert (AAA) Pattern, Test Fixtures, Setup and Teardown Methods in JUnit/
+│   ├── 3. Mockito exercises/
+│   │   ├── Exercise 1 - Mocking and Stubbing/
+│   │   └── Exercise 2 - Verifying Interactions/
+│   └── 6. SL4J Logging exercises/
+│       └── Exercise 1 - Logging Error Messages and Warning Levels/
 └── Week 2/
-    ├── Spring Core and Maven/
+    ├── Spring Core_Maven/
+    │   ├── Exercise 1 - Configuring a Basic Spring Application/
+    │   ├── Exercise 2 - Implementing Dependency Injection/
+    │   └── Exercise 4 - Creating and Configuring a Maven Project/
     └── Spring Data JPA with Spring Boot, Hibernate/
 ```
 
 ---
 
-## Detailed Directory and Project Descriptions
+## Detailed Directory and Exercise Descriptions
 
 ### [Week 1](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201)
 
-#### 1. [Data Structures and Algorithms](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Data%20Structures%20and%20Algorithms)
-* **[E-Commerce Platform Search Function](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Data%20Structures%20and%20Algorithms/E-Commerce%20Platform%20Search%20Function)**: 
-  * A Java project implementing linear search and binary search algorithms to search for products on an e-commerce platform by ID. It contains complexity analysis (best, average, and worst-case scenarios) as comments in the code.
-
-#### 2. [Desgin Patterns and Principle](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Desgin%20Patterns%20and%20Principle)
-* **[FactoryMethodImplementation](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Desgin%20Patterns%20and%20Principle/FactoryMethodImplementation)**:
-  * Demonstrates the **Factory Method Design Pattern** by implementing a document creation system (Word, PDF, Excel).
-* **[Financial_ForeCasting](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Desgin%20Patterns%20and%20Principle/Financial_ForeCasting)**:
-  * Implements financial forecasting algorithms utilizing recursion.
-* **[SettingUpJunit](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Desgin%20Patterns%20and%20Principle/SettingUpJunit)**:
-  * A Maven project demonstrating the setup and configuration of JUnit 5 for testing simple calculator arithmetic operations.
-* **[SingletoPatternExample](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Desgin%20Patterns%20and%20Principle/SingletoPatternExample)**:
+#### 1. [Design Patterns and Principles](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Design%20Patterns%20and%20Principles)
+* **[Exercise 1 - Implementing the Singleton Pattern](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Design%20Patterns%20and%20Principles/Exercise%201%20-%20Implementing%20the%20Singleton%20Pattern)**:
   * Illustrates the **Singleton Design Pattern** by implementing a thread-safe Logger class.
+* **[Exercise 2 - Implementing the Factory Method Pattern](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Design%20Patterns%20and%20Principles/Exercise%202%20-%20Implementing%20the%20Factory%20Method%20Pattern)**:
+  * Demonstrates the **Factory Method Design Pattern** by implementing a document creation system (Word, PDF, Excel).
 
-#### 3. [PL_SQL](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/PL_SQL)
-* **[Control Structure](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/PL_SQL/Control%20Structure)**:
-  * PL/SQL scripts demonstrating cursors, loops (`FOR`), and conditional blocks (`IF-THEN`) for scenarios like applying interest rate discounts, promoting VIP customers, and loan reminders.
-* **[Stored Procedures](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/PL_SQL/Stored%20Procedures)**:
-  * PL/SQL scripts for stored procedures and functions to manage accounts, process transactions, and calculate interest.
+#### 2. [Algorithms_Data Structures](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Algorithms_Data%20Structures)
+* **[Exercise 2 - E-commerce Platform Search Function](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Algorithms_Data%20Structures/Exercise%202%20-%20E-commerce%20Platform%20Search%20Function)**: 
+  * A Java project implementing linear search and binary search algorithms to search for products on an e-commerce platform by ID, with time complexity analysis.
+* **[Exercise 7 - Financial Forecasting](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/Algorithms_Data%20Structures/Exercise%207%20-%20Financial%20Forecasting)**:
+  * Implements financial forecasting algorithms utilizing recursion.
 
-#### 4. [TDD using Junit and Mockito](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/TDD%20using%20Junit%20and%20Mockito)
-* **[AAA_Pattern](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/TDD%20using%20Junit%20and%20Mockito/AAA_Pattern)**:
-  * Maven project illustrating test structure following the Arrange-Act-Assert (AAA) pattern.
-* **[Assertions_in_JUnit](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/TDD%20using%20Junit%20and%20Mockito/Assertions_in_JUnit)**:
-  * Maven project focused on using various JUnit assertion methods (e.g. `assertEquals`, `assertTrue`, `assertThrows`, etc.).
-* **[LibraryManagement](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/TDD%20using%20Junit%20and%20Mockito/LibraryManagement)**:
-  * Maven project for a library management system showcasing repository and service separation with Spring Context configuration (`applicationContext.xml`).
-* **[Logging_Error_Messages](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/TDD%20using%20Junit%20and%20Mockito/Logging_Error_Messages)**:
-  * Maven project verifying exception scenarios and error logging practices.
-* **[Mocking_and_Stubbing](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/TDD%20using%20Junit%20and%20Mockito/Mocking_and_Stubbing)**:
-  * Maven project demonstrating how to use Mockito to mock dependencies (e.g., database or external service) and stub their behaviors for unit testing.
-* **[Verifiying_Interactions](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/TDD%20using%20Junit%20and%20Mockito/Verifiying_Interactions)**:
-  * Maven project showcasing verification of method calls, call frequencies, and parameter interactions using Mockito `verify`.
+#### 3. [PLSQL_Exercises](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/PLSQL_Exercises)
+* **[Exercise 1 - Control Structures](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/PLSQL_Exercises/Exercise%201%20-%20Control%20Structures)**:
+  * PL/SQL scripts demonstrating cursors, loops (`FOR`), and conditional blocks (`IF-THEN`) for scenario-based customer and loan management updates.
+* **[Exercise 3 - Stored Procedures](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/PLSQL_Exercises/Exercise%203%20-%20Stored%20Procedures)**:
+  * PL/SQL scripts for stored procedures and functions to manage account transfers and interest rate updates.
+
+#### 4. [1. JUnit_Basic Testing Exercises](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/1.%20JUnit_Basic%20Testing%20Exercises)
+* **[Exercise 1 - Setting Up JUnit](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/1.%20JUnit_Basic%20Testing%20Exercises/Exercise%201%20-%20Setting%20Up%20JUnit)**:
+  * A Maven project demonstrating basic JUnit 5 setup for testing calculator arithmetic.
+* **[Exercise 3 - Assertions in JUnit](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/1.%20JUnit_Basic%20Testing%20Exercises/Exercise%203%20-%20Assertions%20in%20JUnit)**:
+  * Focuses on using diverse JUnit assertions (e.g. `assertEquals`, `assertTrue`, `assertThrows`, etc.).
+* **[Exercise 4 - Arrange-Act-Assert (AAA) Pattern, Test Fixtures, Setup and Teardown Methods in JUnit](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/1.%20JUnit_Basic%20Testing%20Exercises/Exercise%204%20-%20Arrange-Act-Assert%20(AAA)%20Pattern,%20Test%20Fixtures,%20Setup%20and%20Teardown%20Methods%20in%20JUnit)**:
+  * Illustrates standard AAA testing workflow along with `@BeforeEach`, `@AfterEach`, `@BeforeAll`, and `@AfterAll` hooks.
+
+#### 5. [3. Mockito exercises](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/3.%20Mockito%20exercises)
+* **[Exercise 1 - Mocking and Stubbing](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/3.%20Mockito%20exercises/Exercise%201%20-%20Mocking%20and%20Stubbing)**:
+  * Demonstrates mock creation and dependency stubbing using Mockito.
+* **[Exercise 2 - Verifying Interactions](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/3.%20Mockito%20exercises/Exercise%202%20-%20Verifying%20Interactions)**:
+  * Shows verification of method call invocations, invocation counts, and parameters in Mockito tests.
+
+#### 6. [6. SL4J Logging exercises](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/6.%20SL4J%20Logging%20exercises)
+* **[Exercise 1 - Logging Error Messages and Warning Levels](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%201/6.%20SL4J%20Logging%20exercises/Exercise%201%20-%20Logging%20Error%20Messages%20and%20Warning%20Levels)**:
+  * Illustrates application logging and warning/error levels using SLF4J framework.
 
 ---
 
 ### [Week 2](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%202)
 
-* **[Spring Core and Maven](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%202/Spring%20Core%20and%20Maven)**:
-  * Workspace prepared for Spring Framework core concepts, dependency injection, and Maven management.
-* **[Spring Data JPA with Spring Boot, Hibernate](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%202/Spring%20Data%20JPA%20with%20Spring%20Boot,%20Hibernate)**:
-  * Workspace prepared for data persistence using Spring Data JPA, Hibernate ORM, and Spring Boot.
+#### 1. [Spring Core_Maven](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%202/Spring%20Core_Maven)
+* **[Exercise 1 - Configuring a Basic Spring Application](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%202/Spring%20Core_Maven/Exercise%201%20-%20Configuring%20a%20Basic%20Spring%20Application)**:
+  * Configures a basic Spring application container context using XML definition files.
+* **[Exercise 2 - Implementing Dependency Injection](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%202/Spring%20Core_Maven/Exercise%202%20-%20Implementing%20Dependency%20Injection)**:
+  * Implements setter injection for injecting a repository bean into a service bean.
+* **[Exercise 4 - Creating and Configuring a Maven Project](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%202/Spring%20Core_Maven/Exercise%204%20-%20Creating%20and%20Configuring%20a%20Maven%20Project)**:
+  * Shows proper structure and dependency management for Maven building a Spring container app.
+
+#### 2. [Spring Data JPA with Spring Boot, Hibernate](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%202/Spring%20Data%20JPA%20with%20Spring%20Boot,%20Hibernate)
+* Prepared workspace directory for data persistence using Spring Data JPA, Hibernate, and Spring Boot. Contains `.gitkeep` to ensure folder tracking in Git.
 
 ---
 
@@ -96,7 +108,5 @@ For any of the subdirectories containing a `pom.xml`, you can compile and test t
 mvn clean test
 ```
 
-For standard Java projects (e.g., `E-Commerce Platform Search Function`, `FactoryMethodImplementation`, `Financial_ForeCasting`, and `SingletoPatternExample`), you can open them in your IDE and run the `Main` or test classes directly.
-
 ### Running PL/SQL Scripts
-The scripts inside `Week 1/PL_SQL/` can be executed in an SQL worksheet connected to an Oracle database instance with appropriate tables (`Customers`, `Loans`, `loanDetails`).
+The scripts inside `Week 1/PLSQL_Exercises/` can be executed in an SQL worksheet connected to an Oracle database instance with appropriate tables (`Customers`, `Loans`, `loanDetails`).
