@@ -27,12 +27,21 @@ JFS/
 │   │   └── Exercise 2 - Verifying Interactions/
 │   └── 6. SL4J Logging exercises/
 │       └── Exercise 1 - Logging Error Messages and Warning Levels/
-└── Week 2/
-    ├── Spring Core_Maven/
-    │   ├── Exercise 1 - Configuring a Basic Spring Application/
-    │   ├── Exercise 2 - Implementing Dependency Injection/
-    │   └── Exercise 4 - Creating and Configuring a Maven Project/
-    └── Spring Data JPA with Spring Boot, Hibernate/
+├── Week 2/
+│   ├── Spring Core_Maven/
+│   │   ├── Exercise 1 - Configuring a Basic Spring Application/
+│   │   ├── Exercise 2 - Implementing Dependency Injection/
+│   │   └── Exercise 4 - Creating and Configuring a Maven Project/
+│   └── Spring Data JPA with Spring Boot, Hibernate/
+└── Week 3/
+    ├── 1. Spring REST Hands-on/
+    │   ├── Exercise 1 - Spring Learn Application/
+    │   ├── Exercise 2 - Country Management/
+    │   ├── Exercise 3 - REST Country Web Service/
+    │   ├── Exercise 4 - REST Hello World/
+    │   └── Exercise 5 - REST Get Country Based On Country Code/
+    └── 5. JWT Hands-on/
+        └── Exercise 1 - Creating Authentication Service/
 ```
 
 ---
@@ -94,6 +103,41 @@ JFS/
 
 ---
 
+### [Week 3](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%203)
+
+#### 1. [Spring REST Hands-on](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%203/1.%20Spring%20REST%20Hands-on)
+* **[Exercise 1 - Spring Learn Application](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%203/1.%20Spring%20REST%20Hands-on/Exercise%201%20-%20Spring%20Learn%20Application)**:
+  * Foundation Spring Boot application demonstrating REST endpoint fundamentals.
+  
+* **[Exercise 2 - Country Management](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%203/1.%20Spring%20REST%20Hands-on/Exercise%202%20-%20Country%20Management)**:
+  * REST service for managing country data with CRUD operations.
+
+* **[Exercise 3 - REST Country Web Service](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%203/1.%20Spring%20REST%20Hands-on/Exercise%203%20-%20REST%20Country%20Web%20Service)**:
+  * Enhanced REST service with `HelloController` providing `/hello` endpoint and country data loading from XML configuration on startup.
+
+* **[Exercise 4 - REST Hello World](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%203/1.%20Spring%20REST%20Hands-on/Exercise%204%20-%20REST%20Hello%20World)**:
+  * Simple REST service with a single endpoint:
+    * `GET /hello` returns `"Hello, World!!"`
+  * Complete Maven project with `pom.xml`, `.gitignore`, and `application.properties` configuration.
+
+* **[Exercise 5 - REST Get Country Based On Country Code](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%203/1.%20Spring%20REST%20Hands-on/Exercise%205%20-%20REST%20Get%20Country%20Based%20On%20Country%20Code)**:
+  * REST endpoint for retrieving country information by country code:
+    * `GET /countries/{code}` with proper 404 error handling
+    * `CountryService` loading country data from `country.xml` configuration file
+    * Pre-loaded countries: `US`, `DE`, `IN`, `JP`
+  * Project structure includes Controller, Service, Model classes, and XML configuration.
+
+#### 2. [JWT Hands-on](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%203/5.%20JWT%20Hands-on)
+* **[Exercise 1 - Creating Authentication Service](file:///c:/Users/Nesa%20Saravana%20Kumar/OneDrive/Desktop/JFS/Week%203/5.%20JWT%20Hands-on/Exercise%201%20-%20Creating%20Authentication%20Service)**:
+  * JWT-based authentication service with Spring Security:
+    * `POST /authenticate` endpoint accepting Basic authentication (`user`/`pwd`)
+    * JWT token generation using `JwtTokenUtil` utility class
+    * `SecurityConfig` with in-memory user authentication
+    * BCrypt password encoding for secure credential storage
+  * Complete Spring Boot application demonstrating token-based security.
+
+---
+
 ## Getting Started
 
 ### Prerequisites
@@ -108,5 +152,55 @@ For any of the subdirectories containing a `pom.xml`, you can compile and test t
 mvn clean test
 ```
 
+For running Spring Boot applications:
+```bash
+mvn spring-boot:run
+```
+
 ### Running PL/SQL Scripts
 The scripts inside `Week 1/PLSQL_Exercises/` can be executed in an SQL worksheet connected to an Oracle database instance with appropriate tables (`Customers`, `Loans`, `loanDetails`).
+
+### REST Endpoints Testing
+REST endpoints can be tested using tools such as:
+- **Postman** - GUI-based API testing tool
+- **cURL** - Command-line HTTP client
+- **IntelliJ IDEA REST Client** - Built-in IDE support
+
+Example using cURL:
+```bash
+# Test Hello World endpoint
+curl -X GET http://localhost:8080/hello
+
+# Test Country endpoint with 404 handling
+curl -X GET http://localhost:8080/countries/US
+
+# Test JWT Authentication
+curl -X POST http://localhost:8080/authenticate \
+  -H "Authorization: Basic dXNlcjpwd2Q=" \
+  -H "Content-Type: application/json"
+```
+
+---
+
+## Learning Outcomes
+
+Upon completing the exercises in this repository, you will have practical knowledge of:
+
+- **Design Patterns**: Singleton, Factory Method
+- **Data Structures & Algorithms**: Linear/Binary Search, Recursion
+- **Testing Frameworks**: JUnit 5, Mockito
+- **Logging**: SLF4J logging levels and configuration
+- **Spring Framework**: Dependency Injection, Spring Core, Maven configuration
+- **Spring Boot & Data Persistence**: Spring Data JPA, Hibernate, entity mapping
+- **REST API Development**: Building RESTful web services with Spring Boot
+- **Security**: JWT authentication, Spring Security, BCrypt password encoding
+- **Database**: PL/SQL scripting, stored procedures, control structures
+
+---
+
+## Notes
+
+- All exercises are self-contained Maven projects unless otherwise noted.
+- XML configuration files for exercises are provided in their respective directories.
+- Each exercise includes proper project structure with clear separation of concerns (Controllers, Services, Models, Config).
+- Database-related exercises require appropriate database setup and configuration.
