@@ -33,15 +33,22 @@ JFS/
 │   │   ├── Exercise 2 - Implementing Dependency Injection/
 │   │   └── Exercise 4 - Creating and Configuring a Maven Project/
 │   └── Spring Data JPA with Spring Boot, Hibernate/
-└── Week 3/
-    ├── 1. Spring REST Hands-on/
-    │   ├── Exercise 1 - Spring Learn Application/
-    │   ├── Exercise 2 - Country Management/
-    │   ├── Exercise 3 - REST Country Web Service/
-    │   ├── Exercise 4 - REST Hello World/
-    │   └── Exercise 5 - REST Get Country Based On Country Code/
-    └── 5. JWT Hands-on/
-        └── Exercise 1 - Creating Authentication Service/
+├── Week 3/
+│   ├── 1. Spring REST Hands-on/
+│   │   ├── Exercise 1 - Spring Learn Application/
+│   │   ├── Exercise 2 - Country Management/
+│   │   ├── Exercise 3 - REST Country Web Service/
+│   │   ├── Exercise 4 - REST Hello World/
+│   │   └── Exercise 5 - REST Get Country Based On Country Code/
+│   └── 5. JWT Hands-on/
+│       └── Exercise 1 - Creating Authentication Service/
+└── Week 4/
+    ├── Creating Microservices/
+    │   ├── Exercise 1 - Account Microservice/
+    │   └── Exercise 2 - Loan Microservice/
+    └── Eureka Discovery Server/
+        ├── Exercise 1 - API Gateway/
+        └── Exercise 2 - Eureka Discovery Server/
 ```
 
 ---
@@ -138,6 +145,38 @@ JFS/
 
 ---
 
+### [Week 4](file:///c:/Users/CSE%20LAB%201/Downloads/testing/CTS_DN_DeepSkilling_Hands_on/Week%204)
+
+#### 1. [Creating Microservices](file:///c:/Users/CSE%20LAB%201/Downloads/testing/CTS_DN_DeepSkilling_Hands_on/Week%204/Creating%20Microservices)
+
+* **[Exercise 1 - Account Microservice](file:///c:/Users/CSE%20LAB%201/Downloads/testing/CTS_DN_DeepSkilling_Hands_on/Week%204/Creating%20Microservices/Exercise%201%20-%20Account%20Microservice)**:
+  * A Spring Boot microservice exposing account data via REST:
+    * `GET /accounts/{number}` returns account details (number, type, balance)
+    * Package: `com.cognizant.account` with a dedicated `controller` sub-package
+  * Designed to run independently on its own port as part of a distributed microservices system.
+
+* **[Exercise 2 - Loan Microservice](file:///c:/Users/CSE%20LAB%201/Downloads/testing/CTS_DN_DeepSkilling_Hands_on/Week%204/Creating%20Microservices/Exercise%202%20-%20Loan%20Microservice)**:
+  * A Spring Boot microservice exposing loan data via REST:
+    * `GET /loans/{number}` returns loan details (number, type, loan amount, EMI, tenure)
+    * Package: `com.cognizant.loan` with a dedicated `controller` sub-package
+  * Demonstrates multi-service architecture where each service manages its own domain.
+
+#### 2. [Eureka Discovery Server](file:///c:/Users/CSE%20LAB%201/Downloads/testing/CTS_DN_DeepSkilling_Hands_on/Week%204/Eureka%20Discovery%20Server)
+
+* **[Exercise 1 - API Gateway](file:///c:/Users/CSE%20LAB%201/Downloads/testing/CTS_DN_DeepSkilling_Hands_on/Week%204/Eureka%20Discovery%20Server/Exercise%201%20-%20API%20Gateway)**:
+  * Spring Cloud Gateway acting as a single entry point for all microservice traffic:
+    * `LoggingGlobalFilter` implementing `GlobalFilter` and `Ordered` to log every incoming request method, URI, remote address, and outgoing response status
+    * Routes configured via `application.properties` to forward traffic to registered services
+    * Package: `com.cognizant.api_gateway` with a `filter` sub-package
+
+* **[Exercise 2 - Eureka Discovery Server](file:///c:/Users/CSE%20LAB%201/Downloads/testing/CTS_DN_DeepSkilling_Hands_on/Week%204/Eureka%20Discovery%20Server/Exercise%202%20-%20Eureka%20Discovery%20Server)**:
+  * Netflix Eureka-based service registry allowing microservices to register and discover each other dynamically:
+    * `@EnableEurekaServer` annotation to activate the discovery server
+    * `application.properties` configured with server port and self-registration settings
+    * Package: `com.cognizant.eureka_discovery_server`
+
+---
+
 ## Getting Started
 
 ### Prerequisites
@@ -195,6 +234,8 @@ Upon completing the exercises in this repository, you will have practical knowle
 - **REST API Development**: Building RESTful web services with Spring Boot
 - **Security**: JWT authentication, Spring Security, BCrypt password encoding
 - **Database**: PL/SQL scripting, stored procedures, control structures
+- **Microservices**: Building independent Spring Boot microservices with REST APIs
+- **Service Discovery**: Netflix Eureka registry, API Gateway routing, global filters with Spring Cloud Gateway
 
 ---
 
