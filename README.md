@@ -49,6 +49,17 @@ JFS/
     └── Eureka Discovery Server/
         ├── Exercise 1 - API Gateway/
         └── Exercise 2 - Eureka Discovery Server/
+└── Week 5/
+    ├── HANDS-ON-1-Environment-Setup-Project-Structure-First-Component/
+    ├── HANDS-ON-2-Data-Binding-Lifecycle-Hooks-Component-Communication/
+    ├── HANDS-ON-3-Directives-Pipes/
+    ├── HANDS-ON-4-Template-Driven-Forms-Validation/
+    ├── HANDS-ON-5-Reactive-Forms/
+    ├── HANDS-ON-6-Services-Dependency-Injection/
+    ├── HANDS-ON-7-Angular-Routing-Guards-Lazy-Loading/
+    ├── HANDS-ON-8-HTTP-Client-Observables-Interceptors/
+    ├── HANDS-ON-9-State-Management-NgRx/
+    └── HANDS-ON-10-Unit-Testing-Jasmine-Karma/
 ```
 
 ---
@@ -174,6 +185,50 @@ JFS/
     * `@EnableEurekaServer` annotation to activate the discovery server
     * `application.properties` configured with server port and self-registration settings
     * Package: `com.cognizant.eureka_discovery_server`
+
+---
+
+### [Week 5](Week_5)
+
+#### 1. [HANDS-ON-1-Environment-Setup-Project-Structure-First-Component](Week_5/HANDS-ON-1-Environment-Setup-Project-Structure-First-Component)
+* **Setup and structure of a basic Angular application**:
+  * Covers environment setup, project creation, and building the first Angular component.
+
+#### 2. [HANDS-ON-2-Data-Binding-Lifecycle-Hooks-Component-Communication](Week_5/HANDS-ON-2-Data-Binding-Lifecycle-Hooks-Component-Communication)
+* **Data binding, lifecycle hooks, and component communication**:
+  * Demonstrates property binding, event binding, and communication between parent and child components.
+
+#### 3. [HANDS-ON-3-Directives-Pipes](Week_5/HANDS-ON-3-Directives-Pipes)
+* **Structural and attribute directives, plus pipes**:
+  * Showcases Angular directives such as `*ngIf`, `*ngFor`, and built-in/custom pipes.
+
+#### 4. [HANDS-ON-4-Template-Driven-Forms-Validation](Week_5/HANDS-ON-4-Template-Driven-Forms-Validation)
+* **Template-driven forms and validation**:
+  * Explains form handling, validation rules, and user-friendly form feedback.
+
+#### 5. [HANDS-ON-5-Reactive-Forms](Week_5/HANDS-ON-5-Reactive-Forms)
+* **Reactive forms and form controls**:
+  * Covers model-driven form creation, validation, and dynamic form logic.
+
+#### 6. [HANDS-ON-6-Services-Dependency-Injection](Week_5/HANDS-ON-6-Services-Dependency-Injection)
+* **Angular services and dependency injection**:
+  * Demonstrates how services are created and shared across components using DI.
+
+#### 7. [HANDS-ON-7-Angular-Routing-Guards-Lazy-Loading](Week_5/HANDS-ON-7-Angular-Routing-Guards-Lazy-Loading)
+* **Routing, guards, and lazy-loaded modules**:
+  * Implements route configuration, route guards, and lazy loading for application modules.
+
+#### 8. [HANDS-ON-8-HTTP-Client-Observables-Interceptors](Week_5/HANDS-ON-8-HTTP-Client-Observables-Interceptors)
+* **HTTP client, observables, and interceptors**:
+  * Covers API calls with Angular HttpClient, RxJS observables, and request interception.
+
+#### 9. [HANDS-ON-9-State-Management-NgRx](Week_5/HANDS-ON-9-State-Management-NgRx)
+* **State management using NgRx**:
+  * Introduces actions, reducers, selectors, and centralized state handling.
+
+#### 10. [HANDS-ON-10-Unit-Testing-Jasmine-Karma](Week_5/HANDS-ON-10-Unit-Testing-Jasmine-Karma)
+* **Unit testing with Jasmine and Karma**:
+  * Demonstrates component and service testing strategies in Angular projects.
 
 ---
 
